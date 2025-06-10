@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8b7d1f25cc6e689144845bde75264f6a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8b7d1f25cc6e689144845bde75264f6a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8b7d1f25cc6e689144845bde75264f6a = L.map(
+                "map_8b7d1f25cc6e689144845bde75264f6a",
+                {
+                    center: [23.77537057142857, 120.92268328571427],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cc9ae1666f4b8831a962091eb7dc51bb = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_cc9ae1666f4b8831a962091eb7dc51bb.addTo(map_8b7d1f25cc6e689144845bde75264f6a);
+        
+    
+            var marker_306ef370b7917de31b33acb2554bfca7 = L.marker(
+                [25.047924, 121.517491],
+                {}
+            ).addTo(map_8b7d1f25cc6e689144845bde75264f6a);
+        
+    
+            var icon_7812bada94b3a0ec20dc972c7243885e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_306ef370b7917de31b33acb2554bfca7.setIcon(icon_7812bada94b3a0ec20dc972c7243885e);
+        
+    
+        var popup_e63a84bfb105abcecb7b5b560aec34c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac5cc83ec0249954cef23cdeb7f900d9 = $(`<div id="html_ac5cc83ec0249954cef23cdeb7f900d9" style="width: 100.0%; height: 100.0%;">台北車站<br>緯度: 25.047924<br>經度: 121.517491</div>`)[0];
+                popup_e63a84bfb105abcecb7b5b560aec34c3.setContent(html_ac5cc83ec0249954cef23cdeb7f900d9);
+            
+        
+
+        marker_306ef370b7917de31b33acb2554bfca7.bindPopup(popup_e63a84bfb105abcecb7b5b560aec34c3)
+        ;
+
+        
+    
+    
+            marker_306ef370b7917de31b33acb2554bfca7.bindTooltip(
+                `<div>
+                     台北車站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ee41a14e3fd141df3f2353e7d4e62080 = L.marker(
+                [24.805832, 120.968798],
+                {}
+            ).addTo(map_8b7d1f25cc6e689144845bde75264f6a);
+        
+    
+            var icon_73d5f4aa93754ffd74646c2d71192730 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ee41a14e3fd141df3f2353e7d4e62080.setIcon(icon_73d5f4aa93754ffd74646c2d71192730);
+        
+    
+        var popup_87f73744bf418a68397c1ed9b91a2318 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a57f08c6801b40aca37f6481d9e48e3f = $(`<div id="html_a57f08c6801b40aca37f6481d9e48e3f" style="width: 100.0%; height: 100.0%;">新竹車站<br>緯度: 24.805832<br>經度: 120.968798</div>`)[0];
+                popup_87f73744bf418a68397c1ed9b91a2318.setContent(html_a57f08c6801b40aca37f6481d9e48e3f);
+            
+        
+
+        marker_ee41a14e3fd141df3f2353e7d4e62080.bindPopup(popup_87f73744bf418a68397c1ed9b91a2318)
+        ;
+
+        
+    
+    
+            marker_ee41a14e3fd141df3f2353e7d4e62080.bindTooltip(
+                `<div>
+                     新竹車站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3a271f4c608ce9bf5a7339a50693b6a8 = L.marker(
+                [24.137611, 120.685417],
+                {}
+            ).addTo(map_8b7d1f25cc6e689144845bde75264f6a);
+        
+    
+            var icon_ce48e79921bf0946e91871172ed71225 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3a271f4c608ce9bf5a7339a50693b6a8.setIcon(icon_ce48e79921bf0946e91871172ed71225);
+        
+    
+        var popup_ea248564403079a05194724d0cf2b5b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3afcb25340a357b58f8b3969798da2e8 = $(`<div id="html_3afcb25340a357b58f8b3969798da2e8" style="width: 100.0%; height: 100.0%;">台中車站<br>緯度: 24.137611<br>經度: 120.685417</div>`)[0];
+                popup_ea248564403079a05194724d0cf2b5b1.setContent(html_3afcb25340a357b58f8b3969798da2e8);
+            
+        
+
+        marker_3a271f4c608ce9bf5a7339a50693b6a8.bindPopup(popup_ea248564403079a05194724d0cf2b5b1)
+        ;
+
+        
+    
+    
+            marker_3a271f4c608ce9bf5a7339a50693b6a8.bindTooltip(
+                `<div>
+                     台中車站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_62a6abd79f4286f7095f29537a6e7f26 = L.marker(
+                [23.711975, 120.427538],
+                {}
+            ).addTo(map_8b7d1f25cc6e689144845bde75264f6a);
+        
+    
+            var icon_4887f488ece2b27e235e7930d68ddd3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_62a6abd79f4286f7095f29537a6e7f26.setIcon(icon_4887f488ece2b27e235e7930d68ddd3a);
+        
+    
+        var popup_b30925331b92b47020de1977b4fcb496 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3110f31391938de6657385a7c46e005 = $(`<div id="html_d3110f31391938de6657385a7c46e005" style="width: 100.0%; height: 100.0%;">斗六車站<br>緯度: 23.711975<br>經度: 120.427538</div>`)[0];
+                popup_b30925331b92b47020de1977b4fcb496.setContent(html_d3110f31391938de6657385a7c46e005);
+            
+        
+
+        marker_62a6abd79f4286f7095f29537a6e7f26.bindPopup(popup_b30925331b92b47020de1977b4fcb496)
+        ;
+
+        
+    
+    
+            marker_62a6abd79f4286f7095f29537a6e7f26.bindTooltip(
+                `<div>
+                     斗六車站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a26aab434bf14a9e683b0b29aafb124c = L.marker(
+                [22.629611, 120.301388],
+                {}
+            ).addTo(map_8b7d1f25cc6e689144845bde75264f6a);
+        
+    
+            var icon_3e9080faa40eb5a0a64dfe43ccc3d115 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a26aab434bf14a9e683b0b29aafb124c.setIcon(icon_3e9080faa40eb5a0a64dfe43ccc3d115);
+        
+    
+        var popup_51de32fc546c17aac039e9b887cfdbae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d7ad6da96c6c615e381940254ac7758 = $(`<div id="html_7d7ad6da96c6c615e381940254ac7758" style="width: 100.0%; height: 100.0%;">高雄車站<br>緯度: 22.629611<br>經度: 120.301388</div>`)[0];
+                popup_51de32fc546c17aac039e9b887cfdbae.setContent(html_7d7ad6da96c6c615e381940254ac7758);
+            
+        
+
+        marker_a26aab434bf14a9e683b0b29aafb124c.bindPopup(popup_51de32fc546c17aac039e9b887cfdbae)
+        ;
+
+        
+    
+    
+            marker_a26aab434bf14a9e683b0b29aafb124c.bindTooltip(
+                `<div>
+                     高雄車站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_586f3a74f03003a86d7769c753e23244 = L.marker(
+                [23.33825, 121.454262],
+                {}
+            ).addTo(map_8b7d1f25cc6e689144845bde75264f6a);
+        
+    
+            var icon_3b1f6fe174f3986ea206ac25b72206b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_586f3a74f03003a86d7769c753e23244.setIcon(icon_3b1f6fe174f3986ea206ac25b72206b7);
+        
+    
+        var popup_a4e392ac48bee4bf98ceec483a49a0b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31d9afbf0e47527319301701c37e4fc1 = $(`<div id="html_31d9afbf0e47527319301701c37e4fc1" style="width: 100.0%; height: 100.0%;">花蓮車站<br>緯度: 23.33825<br>經度: 121.454262</div>`)[0];
+                popup_a4e392ac48bee4bf98ceec483a49a0b7.setContent(html_31d9afbf0e47527319301701c37e4fc1);
+            
+        
+
+        marker_586f3a74f03003a86d7769c753e23244.bindPopup(popup_a4e392ac48bee4bf98ceec483a49a0b7)
+        ;
+
+        
+    
+    
+            marker_586f3a74f03003a86d7769c753e23244.bindTooltip(
+                `<div>
+                     花蓮車站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_37ad3cfc09f031eea98a54d9753c75c8 = L.marker(
+                [22.756391, 121.103889],
+                {}
+            ).addTo(map_8b7d1f25cc6e689144845bde75264f6a);
+        
+    
+            var icon_92efd465840d2cd2d1ce57f27dc21b99 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_37ad3cfc09f031eea98a54d9753c75c8.setIcon(icon_92efd465840d2cd2d1ce57f27dc21b99);
+        
+    
+        var popup_271733a05b8f43f3b0c6cfb248385adb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37eebd058400d2a05dc5d829c9455c69 = $(`<div id="html_37eebd058400d2a05dc5d829c9455c69" style="width: 100.0%; height: 100.0%;">台東車站<br>緯度: 22.756391<br>經度: 121.103889</div>`)[0];
+                popup_271733a05b8f43f3b0c6cfb248385adb.setContent(html_37eebd058400d2a05dc5d829c9455c69);
+            
+        
+
+        marker_37ad3cfc09f031eea98a54d9753c75c8.bindPopup(popup_271733a05b8f43f3b0c6cfb248385adb)
+        ;
+
+        
+    
+    
+            marker_37ad3cfc09f031eea98a54d9753c75c8.bindTooltip(
+                `<div>
+                     台東車站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
